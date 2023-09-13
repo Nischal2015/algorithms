@@ -1,46 +1,55 @@
 class BinarySearch:
-  
-  def __init__(self, list):
-    self.list = list
-    self.start = 0
-    self.end = len(list) - 1
+    def __init__(self, list):
+        self.list = list
+        self.start = 0
+        self.end = len(list) - 1
 
-  def iterative_search(self, value):
-    while(self.start <= self.end):
-      middleValue = self.__getMiddleValue()
+    def iterative_search(self, value):
+        """
+        Time Complexity: O(log(n))
+        Space Complexity: O(1)
+        """
 
-      if value == middleValue:
-        return self.__getMiddleIndex()
+        while (self.start <= self.end):
+            middleValue = self.__getMiddleValue()
 
-      elif value < middleValue:
-        self.end = self.__getMiddleIndex() - 1
+            if value == middleValue:
+                return self.__getMiddleIndex()
 
-      else:
-        self.start = self.__getMiddleIndex() + 1
+            elif value < middleValue:
+                self.end = self.__getMiddleIndex() - 1
 
-    raise Exception(f'{value} not found')
+            else:
+                self.start = self.__getMiddleIndex() + 1
 
-  def recursive_search(self, value):
-    return self.__search(value, self.start, self.end)
+        raise Exception(f'{value} not found')
 
-  def __search(self, value, start, end):
-    if start > end:
-      raise Exception(f'{value} not found')
+    def recursive_search(self, value):
+        """
+        Time Complexity: O(log(n))
+        Space Complexity: O(log(n))
+        """
 
-    middleValue = self.__getMiddleValue()
-    if middleValue == value:
-      return self.__getMiddleIndex()
+        return self.__search(value, self.start, self.end)
 
-    elif value < middleValue:
-      self.end = self.__getMiddleIndex() - 1
+    def __search(self, value, start, end):
+        if start > end:
+            raise Exception(f'{value} not found')
 
-    else:
-      self.start = self.__getMiddleIndex() + 1 
+        middleValue = self.__getMiddleValue()
+        if middleValue == value:
+            return self.__getMiddleIndex()
 
-    return self.__search(value, self.start, self.end)
+        elif value < middleValue:
+            self.end = self.__getMiddleIndex() - 1
 
-  def __getMiddleIndex(self):
-    return (self.start + self.end) // 2
+        else:
+            self.start = self.__getMiddleIndex() + 1
 
-  def __getMiddleValue(self):
-    return self.list[self.__getMiddleIndex()]
+        return self.__search(value, self.start, self.end)
+
+    def __getMiddleIndex(self):
+        return (self.start + self.end) // 2
+
+    def __getMiddleValue(self):
+        return self.list[self.__getMiddleIndex()]

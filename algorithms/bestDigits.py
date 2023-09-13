@@ -1,33 +1,39 @@
 class BestDigits:
-  def __init__(self, number, numDigits):
-    self.number = number
-    self.itemStack = []
-    self.numDigits = numDigits
+    """
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+    """
 
-  def getBestDigits(self):
-    for i in self.number:
-      while self.__lengthOfStack() > 0 and self.__getLastItemFromStack() < i and self.numDigits > 0:
-        self.numDigits -= 1
-        self.itemStack.pop()
+    def __init__(self, number, numDigits):
+        self.number = number
+        self.itemStack = []
+        self.numDigits = numDigits
 
-      self.itemStack.append(i)
+    def getBestDigits(self):
+        for i in self.number:
+            while self.__lengthOfStack() > 0 and self.__getLastItemFromStack() < i and self.numDigits > 0:
+                self.numDigits -= 1
+                self.itemStack.pop()
 
-    self.__popExtraItemsFromStack(self.numDigits)
+            self.itemStack.append(i)
 
-    return self.__formatStackAsString()
+        self.__popExtraItemsFromStack(self.numDigits)
 
-  def __lengthOfStack(self):
-    return len(self.itemStack)
+        return self.__formatStackAsString()
 
-  def __getLastItemFromStack(self):
-    return self.itemStack[-1]
-  
-  def __popExtraItemsFromStack(self, numberOfItemsToPop):
-    for _ in range(numberOfItemsToPop):
-        self.itemStack.pop()
+    def __lengthOfStack(self):
+        return len(self.itemStack)
 
-  def __formatStackAsString(self):
-    return "".join(self.itemStack)
-  
+    def __getLastItemFromStack(self):
+        return self.itemStack[-1]
+
+    def __popExtraItemsFromStack(self, numberOfItemsToPop):
+        for _ in range(numberOfItemsToPop):
+            self.itemStack.pop()
+
+    def __formatStackAsString(self):
+        return "".join(self.itemStack)
+
+
 numbers = BestDigits("988762", 2)
 print(numbers.getBestDigits())
