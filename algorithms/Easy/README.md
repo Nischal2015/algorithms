@@ -3,10 +3,7 @@
 ## List of algorithms
 
 - [Balanced Brackets](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/balancedBrackets.py)
-- [Best Digits](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/bestDigits.py)
-- [Best Seat](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/bestSeat.py)
 - [Binary Search](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/binarySearch.py)
-- [Binary Tree Diameter](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/binaryTreeDiameter.py)
 - [Branch Sums](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/branchSums.py)
 - [Class Photos](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/classPhotos.py)
 - [Find closest value in BST](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/findClosestValueinBST.py)
@@ -18,5 +15,6 @@
 - [Sorted Squared Array](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/sortedSquaredArray.py)
 - [Tandem Bicycle](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/tandemBicycle.py)
 - [Tournament Winner](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/tournamentWinner.py)
+- [Three Greatest Number](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/threeGreatestNumber.py)
 - [Two Number Sum](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/twoNumberSum.py)
 - [Validate Subsequence](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Easy/validateSubsequence.py)
