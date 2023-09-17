@@ -1,4 +1,4 @@
-from BST.binarySearchTree import BinarySearchTree
+from AlgorithmReusableComponents.BST.binarySearchTree import BinarySearchTree
 
 
 class FindClosestValueInBST:

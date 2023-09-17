@@ -1,4 +1,4 @@
-from LinkedList.linkedList import LinkedList
+from AlgorithmReusableComponents.LinkedList.linkedList import LinkedList
 
 
 class RemoveDuplicateLinkedList:
