@@ -1,3 +1,6 @@
+from AlgorithmReusableComponents.BST.binarySearchTree import BinarySearchTree
+
+
 class BranchSums:
     """
     Time Complexity: O(n)
@@ -24,3 +27,9 @@ class BranchSums:
 
         self.__sum(node.left, newRunningSum, sumList)
         self.__sum(node.right, newRunningSum, sumList)
+
+
+array = BinarySearchTree([10, 5, 15, 2, 5, 13, 21, 1, 14])
+tree = array.getBST()
+branchSum = BranchSums(tree)
+print(branchSum.calculateSums())
