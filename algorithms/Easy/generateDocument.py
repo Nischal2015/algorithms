@@ -17,10 +17,7 @@ class GenerateDocument:
 
     def __generateCharacterHashTable(self, characters):
         for char in characters:
-            if not self.__isCharacterInHashTable(char):
-                self.hashTable[char] = 0
-
-            self.hashTable[char] += 1
+            self.hashTable[char] = self.hashTable.get(char, 0) + 1
 
     def __isDocumentSubsetOfCharacter(self, document):
         for char in document:
@@ -35,6 +32,6 @@ class GenerateDocument:
 
 
 document = "AlgoExpert is the Best!"
-characters = "BSte!hetsi ogEAXpelrt x "
+characters = "Bste!hetsi ogEAXpelrt x "
 generateDocument = GenerateDocument()
 print(generateDocument.canGenerateDocument(characters, document))
