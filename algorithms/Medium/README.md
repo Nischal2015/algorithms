@@ -5,3 +5,5 @@
 - [Best Digits](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Medium/bestDigits.py)
 - [Best Seat](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Medium/bestSeat.py)
 - [Binary Tree Diameter](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Medium/binaryTreeDiameter.py)
+- [Smallest Difference](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Medium/smallestDifference.py)
+- [Three Number Sum](https://github.com/Nischal2015/algorithms/blob/main/algorithms/Medium/threeNumberSum.py)
