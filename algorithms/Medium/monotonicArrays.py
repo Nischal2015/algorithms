@@ -1,4 +1,9 @@
 class MonotonicArrays:
+    """
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+    """
+
     def isMonotonic(self, array):
         arrayLength = len(array)
 

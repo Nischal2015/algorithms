@@ -1,11 +1,8 @@
-import time
-
-from more_itertools import first
-
-
 class MoveElementToEnd:
-    def __init__(self):
-        pass
+    """
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+    """
 
     def move(self, array, target):
         firstIdx = 0
